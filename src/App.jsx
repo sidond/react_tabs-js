@@ -19,7 +19,6 @@ export const App = () => {
       <Tabs
         tabs={tabs}
         activeTabId={currentTab.id}
-        currentTab={currentTab}
         onTabSelected={setCurrentTab}
       />
     </div>
