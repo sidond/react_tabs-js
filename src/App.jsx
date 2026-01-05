@@ -19,7 +19,7 @@ export const App = () => {
       <Tabs
         tabs={tabs}
         activeTabId={currentTab.id}
-        onTabSelected={setCurrentTab}
+        onTabSelected={id => setCurrentTab(tabs.find(tab => tab.id === id))}
       />
     </div>
   );
